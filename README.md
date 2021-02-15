@@ -25,21 +25,21 @@ Update settings.v file:
 - Execute scheduled commands at a specific date and time.
 
 ## Commands *(and synonyms)*:
-**watch** *(monitoring, m, w)* - Satus monitoring
+**watch** *(monitoring, m, w)* - satus monitoring
     start *(enable)*           - starts monitoring.
     interval *(set)* 15        - sets the interval to 15 minutes.
-    status *(state)*           - check status of monitoring
-    stop *(disable)*           - stops monitoring
-**configuration** *(config, cfg)* - view solana.service file
-**key validator**                 - get solana validator key
-**key vote**                      - get solana vote key
-**balance** *(b)*                 - check solana balance ( validator & vote )
-**install** 1.1.1                 - install and restart the Solana service (unless a configuration update is required)
-**catchup**                       - solana catchup
-**delinquent**                    - ckeck delinquent validator
-**version** *(v)*                 - get solana version
-**stakes validator**              - view solana stakes validator
-**stakes vote**                   - view solana stakes vote
+    status *(state)*           - check status of monitoring.
+    stop *(disable)*           - stops monitoring.
+**configuration** *(config, cfg)* - view solana.service file.
+**key validator**                 - get solana validator key.
+**key vote**                      - get solana vote key.
+**balance** *(b)*                 - check solana balance ( validator & vote ).
+**install** 1.1.1                 - install and restart the Solana service **(unless a configuration update is required)**.
+**catchup**                       - solana catchup.
+**delinquent**                    - ckeck delinquent validator.
+**version** *(v)*                 - get solana version.
+**stakes validator**              - view solana stakes validator.
+**stakes vote**                   - view solana stakes vote.
 
 
 
