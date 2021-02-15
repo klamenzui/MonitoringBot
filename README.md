@@ -20,16 +20,15 @@ openssl req -newkey rsa:2048 -sha256 -nodes -keyout my.key -x509 -days 365 -out 
    *chat access username* = **<telegram username>**
    *solana key path* = **/<username>/solana**
    *bot certificate* = **ssl/my.pem**
-- Run the Bot ```sh node monitoring_bot.js``` (use ```sh screen ..``` for the leave terminal)
-
+- Run the Bot ```sh node monitoring_bot.js``` (use ```sh screen ..``` for leaving terminal witout stopping the Bot running)
+ 
+ Now on Telegram you can just write the following to the Bot  ```sh /mb v``` (or /tds) and then you will be answered according to your request.
+  
 ## Description
 
 - The bot makes it possible to monitor the state of the node.
-- Execute commands from anywhere via telegram.
-- Execute scheduled commands at a specific date and time.
-
-
-You can just write to Bot ```sh /mb v``` (or /tds) in Telegram and yuo will receive answer 
+- Executes commands anywhere via Telegram.
+- Executes scheduled commands at a specific date and time.
 
 ## Commands *(and synonyms)*:
 - **watch** *(monitoring, m, w)* - satus monitoring
