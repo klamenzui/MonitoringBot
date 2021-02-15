@@ -91,7 +91,7 @@ const watcher = {
 function message(){
 	var res = "" + messages[arguments[0]];
 	for(var i = 1; i<arguments.length; i++){
-		res = res.replace('%', "" + arguments[i]).replace(new RegExp('(:?root)','g'), "<your user>").replace(new RegExp('(:?'+settings.key_validator+')','g'), "<your validator key>").replace(new RegExp('(:?'+settings.key_vote+')','g'), "<your vote key>").replace(new RegExp('(:?'+os.hostname()+')','g'), "<your hostname>")
+		res = res.replace('%', "" + arguments[i]);
 	}
 	console.log(res);
 	return res;
