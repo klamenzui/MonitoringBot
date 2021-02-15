@@ -47,7 +47,8 @@ openssl req -newkey rsa:2048 -sha256 -nodes -keyout my.key -x509 -days 365 -out 
 - **stakes validator**              - shows solana stakes of validator key.
 - **stakes vote**                   - shows solana stakes of vote key.
 
-
+## Demo
+[![demo](https://github.com/klamenzui/MonitoringBot/blob/main/demo.gif)](https://github.com/klamenzui/MonitoringBot/blob/main/demo.gif)
 
 ## Licensing
 
