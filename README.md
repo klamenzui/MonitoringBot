@@ -48,7 +48,7 @@ openssl req -newkey rsa:2048 -sha256 -nodes -keyout my.key -x509 -days 365 -out 
    - *bot certificate* = ssl/my.pem
 - Run the Bot ``` node monitoring_bot.js``` (use ``` screen -d -m node monitoring_bot.js``` for leaving terminal witout stopping the Bot running) or run as a service:
 
-monitoring_bot.service:
+create */etc/systemd/system/monitoring_bot.service* file:
   
 ```sh
 [Unit]
@@ -66,11 +66,11 @@ ExecStart=<path to monitoring_bot.js>
 [Install]
 WantedBy=multi-user.target
 ``` 
- script should have the executable mode turned on ```chmod +x monitoring_bot.js```
+ *monitoring_bot.js* script should have the executable mode turned on ```chmod +x monitoring_bot.js```
  
- and run ```systemctl start monitoring_bot.service```
+ and run ```systemctl start monitoring_bot.service```. Run ```systemctl status monitoring_bot.service``` to check the status.
  
- Now on Telegram you can just write the following to the Bot  ``` /mb v``` (or /tds) and then you will be answered according to your request.
+ - Now on Telegram you can just write the following to the Bot  ``` /mb v``` (or /tds) and then you will be answered according to your request.
 
 ## Commands *(and synonyms)*:
 - **watch** *(monitoring, m, w)* - solana satus monitoring (catchup & delinquent)
