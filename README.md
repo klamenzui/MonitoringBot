@@ -48,6 +48,8 @@ openssl req -newkey rsa:2048 -sha256 -nodes -keyout my.key -x509 -days 365 -out 
    *bot certificate* = **ssl/my.pem**
 - Run the Bot ``` node monitoring_bot.js``` (use ``` screen -d -m node monitoring_bot.js``` for leaving terminal witout stopping the Bot running) or run as a service:
 
+monitoring_bot.service:
+  
 ```sh
 [Unit]
 Description=MonitoringBot
@@ -64,6 +66,8 @@ ExecStart=<path to monitoring_bot.js>
 [Install]
 WantedBy=multi-user.target
 ``` 
+ and run ```systemctl start monitoring_bot.service```
+ 
  Now on Telegram you can just write the following to the Bot  ``` /mb v``` (or /tds) and then you will be answered according to your request.
 
 ## Commands *(and synonyms)*:
