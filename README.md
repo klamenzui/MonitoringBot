@@ -3,6 +3,12 @@
 [![Bot API](https://img.shields.io/badge/Bot%20API-v.5.0-00aced.svg?style=flat-square&logo=telegram)](https://core.telegram.org/bots/api)
 [![Coverage Status](https://img.shields.io/codecov/c/github/yagop/node-telegram-bot-api?style=flat-square&logo=codecov)](https://codecov.io/gh/yagop/node-telegram-bot-api)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate?hosted_button_id=C5U24TX9EN332)
+  
+## Description
+
+- The bot makes it possible to monitor the state of the node.
+- Executes commands anywhere via Telegram.
+- Executes scheduled commands at a specific date and time.
 
 ## Install
 - Create Bot https://t.me/botfather .
@@ -34,15 +40,9 @@ openssl req -newkey rsa:2048 -sha256 -nodes -keyout my.key -x509 -days 365 -out 
    *chat access username* = **<telegram username>**
    *solana key path* = **/<username>/solana**
    *bot certificate* = **ssl/my.pem**
-- Run the Bot ```sh node monitoring_bot.js``` (use ```sh screen -d -m node monitoring_bot.js``` for leaving terminal witout stopping the Bot running)
+- Run the Bot ``` node monitoring_bot.js``` (use ``` screen -d -m node monitoring_bot.js``` for leaving terminal witout stopping the Bot running)
  
- Now on Telegram you can just write the following to the Bot  ```sh /mb v``` (or /tds) and then you will be answered according to your request.
-  
-## Description
-
-- The bot makes it possible to monitor the state of the node.
-- Executes commands anywhere via Telegram.
-- Executes scheduled commands at a specific date and time.
+ Now on Telegram you can just write the following to the Bot  ``` /mb v``` (or /tds) and then you will be answered according to your request.
 
 ## Commands *(and synonyms)*:
 - **watch** *(monitoring, m, w)* - satus monitoring
