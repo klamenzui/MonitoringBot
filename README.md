@@ -16,6 +16,11 @@
 - Then download the bot from github in the node where you run solana
 - Should be installed:
 ```sh
+#one line command
+apt install jq npm nodejs screen openssl -y
+```
+or one by one:
+```sh
 #for downloading js libraries
 apt install npm
 #nodejs to run the bot
