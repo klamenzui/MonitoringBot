@@ -13,7 +13,7 @@
 
 ## Install
 - Create Bot https://t.me/botfather .
-- Then download the bot from github in the node where you run solana
+- Then download the bot *(monitoring_bot.js, settings.v, messages.v, cmd_abbr.v)* from github in the node where you run solana
 - Should be installed:
 ```sh
 #one line command
