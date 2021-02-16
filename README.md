@@ -8,7 +8,8 @@
 
 - The bot makes it possible to monitor the state of the node.
 - Executes commands anywhere via Telegram.
-- Executes scheduled commands at a specific date and time.
+- Executes scheduled commands at a specific date and time via Telegram.
+- Easy access to your Solana data like: Solana version, balance, configuration etc.
 
 ## Install
 - Create Bot https://t.me/botfather .
