@@ -82,7 +82,7 @@ WantedBy=multi-user.target
 - **key validator**                 - gets solana validator key.
 - **key vote**                      - gets solana vote key.
 - **balance** *(b)*                 - checks solana balance (validator & vote).
-- **install** x.x.x                 - updates and restarts Solana service **(unless a configuration update is required)**.
+- **install** *(i, up)* x.x.x                 - updates and restarts Solana service **(unless a configuration update is required)**.
 - **catchup**                       - solana catchup.
 - **delinquent**                    - ckecks delinquent validator.
 - **version** *(v)*                 - get solana version.
