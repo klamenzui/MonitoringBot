@@ -6,11 +6,25 @@
 
 ## Install
 - Create Bot https://t.me/botfather .
-- Then get bot from github.
+- Then download the bot from github in the node where you run solana
+- Should be installed:
+```sh
+#for downloading js libraries
+apt install npm
+#nodejs to run the bot
+apt install nodejs
+#jq to parse json in responses
+apt install jq
+#if you want the bot to keep running after closing the console
+apt install screen
+#to generate pem keys
+apt install openssl
+```
 - Install node-telegram-bot-api and create keypare as followed:
 ```sh
+#install api
 npm i node-telegram-bot-api
-
+#generate pem keys
 mkdir ssl
 cd ssl
 openssl req -newkey rsa:2048 -sha256 -nodes -keyout my.key -x509 -days 365 -out my.pem -subj "/C=US/ST=Your City/L=Brooklyn/O=Your Company/<Your IP>:443"
@@ -20,7 +34,7 @@ openssl req -newkey rsa:2048 -sha256 -nodes -keyout my.key -x509 -days 365 -out 
    *chat access username* = **<telegram username>**
    *solana key path* = **/<username>/solana**
    *bot certificate* = **ssl/my.pem**
-- Run the Bot ```sh node monitoring_bot.js``` (use ```sh screen ..``` for leaving terminal witout stopping the Bot running)
+- Run the Bot ```sh node monitoring_bot.js``` (use ```sh screen -d -m node monitoring_bot.js``` for leaving terminal witout stopping the Bot running)
  
  Now on Telegram you can just write the following to the Bot  ```sh /mb v``` (or /tds) and then you will be answered according to your request.
   
