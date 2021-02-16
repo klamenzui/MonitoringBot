@@ -28,7 +28,7 @@ apt install nodejs
 #jq to parse json in responses
 apt install jq
 #if you want the bot to keep running after closing the console
-apt install screen
+apt install screen (optional)
 #to generate pem keys
 apt install openssl
 ```
@@ -46,8 +46,24 @@ openssl req -newkey rsa:2048 -sha256 -nodes -keyout my.key -x509 -days 365 -out 
    *chat access username* = **<telegram username>**
    *solana key path* = **/<username>/solana**
    *bot certificate* = **ssl/my.pem**
-- Run the Bot ``` node monitoring_bot.js``` (use ``` screen -d -m node monitoring_bot.js``` for leaving terminal witout stopping the Bot running)
- 
+- Run the Bot ``` node monitoring_bot.js``` (use ``` screen -d -m node monitoring_bot.js``` for leaving terminal witout stopping the Bot running) or run as a service:
+
+```sh
+[Unit]
+Description=MonitoringBot
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=<USER>
+ExecStart=<path to monitoring_bot.js>
+
+[Install]
+WantedBy=multi-user.target
+``` 
  Now on Telegram you can just write the following to the Bot  ``` /mb v``` (or /tds) and then you will be answered according to your request.
 
 ## Commands *(and synonyms)*:
