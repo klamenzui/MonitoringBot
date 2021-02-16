@@ -66,6 +66,8 @@ ExecStart=<path to monitoring_bot.js>
 [Install]
 WantedBy=multi-user.target
 ``` 
+ script should have the executable mode turned on ```chmod +x monitoring_bot.js```
+ 
  and run ```systemctl start monitoring_bot.service```
  
  Now on Telegram you can just write the following to the Bot  ``` /mb v``` (or /tds) and then you will be answered according to your request.
