@@ -42,10 +42,10 @@ cd ssl
 openssl req -newkey rsa:2048 -sha256 -nodes -keyout my.key -x509 -days 365 -out my.pem -subj "/C=US/ST=Your City/L=Brooklyn/O=Your Company/<Your IP>:443"
 ```
 - Update settings.v file:
-   - *telegram token*  = **<telegram token>**
-   - *chat access username* = **<telegram username>**
-   - *solana key path* = **/<username>/solana**
-   - *bot certificate* = **ssl/my.pem**
+   - *telegram token*  = < telegram token >
+   - *chat access username* = < telegram username >
+   - *solana key path* = /< username >/solana
+   - *bot certificate* = ssl/my.pem
 - Run the Bot ``` node monitoring_bot.js``` (use ``` screen -d -m node monitoring_bot.js``` for leaving terminal witout stopping the Bot running) or run as a service:
 
 monitoring_bot.service:
