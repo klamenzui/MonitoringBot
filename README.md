@@ -45,7 +45,7 @@ openssl req -newkey rsa:2048 -sha256 -nodes -keyout my.key -x509 -days 365 -out 
  Now on Telegram you can just write the following to the Bot  ``` /mb v``` (or /tds) and then you will be answered according to your request.
 
 ## Commands *(and synonyms)*:
-- **watch** *(monitoring, m, w)* - satus monitoring
+- **watch** *(monitoring, m, w)* - solana satus monitoring (catchup & delinquent)
     - start *(enable)*           - starts monitoring.
     - interval *(set)* 15        - sets the interval to 15 minutes.
     - status *(state)*           - checks status of monitoring.
