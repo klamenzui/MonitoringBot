@@ -92,7 +92,7 @@ const watcher = {
 function message(){
 	var res = "" + messages[arguments[0]];
 	for(var i = 1; i<arguments.length; i++){
-		res = res.replace('%', "" + arguments[i]);
+		res = res.replace('%', "" + arguments[i]);//.replace(new RegExp('(:?root)','g'), "<your user>").replace(new RegExp('(:?'+settings.key_validator+')','g'), "<your validator key>").replace(new RegExp('(:?'+settings.key_vote+')','g'), "<your vote key>").replace(new RegExp('(:?'+os.hostname()+')','g'), "<your hostname>")
 	}
 	console.log(res);
 	return res;
@@ -170,7 +170,7 @@ function loadCmdAbbr(fileName) {
 			}
 		}
 		cmd_arr = JSON.parse('[["'+tmpArr.join(';').replace(/\s*,\s*/g,'","').replace(/\s*;\s*/g,'"],["')+'"]]');
-		message('ce4', 'loaded:' + cmd_arr.length);
+		message('out', 'loaded:' + cmd_arr.length);
 	} catch(e) {
 		message('fa0', fileName);
 		message('out', e);
