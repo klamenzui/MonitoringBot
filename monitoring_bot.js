@@ -170,7 +170,7 @@ function loadCmdAbbr(fileName) {
 			}
 		}
 		cmd_arr = JSON.parse('[["'+tmpArr.join(';').replace(/\s*,\s*/g,'","').replace(/\s*;\s*/g,'"],["')+'"]]');
-		message('ce4', 'loaded:', cmd_arr.length);
+		message('ce4', 'loaded:' + cmd_arr.length);
 	} catch(e) {
 		message('fa0', fileName);
 		message('out', e);
