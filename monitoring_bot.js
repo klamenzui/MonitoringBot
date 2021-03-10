@@ -256,7 +256,7 @@ function init() {
 					bot.sendMessage(chatId, message('out',answer));
 				}
 			} else {
-				bot.sendMessage(chatId, 'access denay');
+				bot.sendMessage(chatId, 'Access denied');
 			}
 		});
 	} catch(e) {
